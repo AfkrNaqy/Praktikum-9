@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title> Login page</title>
     <!-- menghubungkan desain css dari file yang telah dituju yaitu sty.css -->
-    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
