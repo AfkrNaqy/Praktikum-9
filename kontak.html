@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM INPUT</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <style>
+    .warning {
+      color: #ff0000;
+    }
+  </style>
+  <body>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-center bg-primary">FORMULIR PENDAFTARAN</div>
+          <div class="card-body">
+            <!-- pembuatan form yang digunakan untuk memasukkan data -->
+            <form action="simpan_kontak.php" method="POST">
+              <!-- === FORM NAMA === -->
+              <div class="form-group row mb-3">
+                <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+                <div class="col-sm-9"><input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" value="" /> <span class="warning"></span></div>
+              </div>
+
+              <!-- === JENIS KELAMIN === -->
+              <div class="form-group row mb-3">
+                <label for="gender" class="col-sm-3">Jenis Kelamin</label>
+                <div class="col-sm-9">
+                  <select name="jkel" class="form-select form-select-sm" aria-label=".form-select-lg example">
+                    <option selected>Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- === EMAIL -->
+              <div class="form-group row mb-3">
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9"><input type="text" name="email" class="form-control" id="email" placeholder="Email" value="" /> <span class="warning"></span></div>
+              </div>
+
+              <!-- === ALAMAT -->
+              <div class="form-group row mb-3">
+                <label for="alamat" class="col-sm-3 col-form-label">Alamat</label>
+                <div class="col-sm-9"><input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat" value="" /> <span class="warning"></span></div>
+              </div>
+
+              <!-- === Kota === -->
+              <div class="form-group row mb-3">
+                <label for="kota" class="col-sm-3 col-form-label">Kota</label>
+                <div class="col-sm-9"><input type="text" name="kota" class="form-control" id="kota" placeholder="Kota" value="" /> <span class="warning"></span></div>
+              </div>
+
+              <!-- === FORM PESAN === -->
+              <div class="form-group row mb-3">
+                <label for="pesan" class="col-sm-3 col-form-label">Pesan</label>
+                <div class="col-sm-9">
+                  <textarea name="pesan" class="form-control"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-sm-9">
+                  <!-- tombol submit untuk melakukan perintah selanjutnya yaitu dialihkan
+                  ke file php untuk memasukkan data ke dalam database -->
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
